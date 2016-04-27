@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="breadcrumbs_home"/>
+	<body>
+		<referenceBlock name="breadcrumbs">
+			<action method="addCrumb">
+				<argument name="crumbName" xsi:type="string">Account</argument>
+				<argument name="crumbInfo" xsi:type="array">
+					<item name="title" xsi:type="string">Account</item>
+					<item name="label" xsi:type="string">Account</item>
+					<item name="link" xsi:type="string">/customer/account</item>
+				</argument>
+			</action>			
+		</referenceBlock>
+    </body>
+</page>

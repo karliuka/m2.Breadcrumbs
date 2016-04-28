@@ -28,8 +28,9 @@
 			<action method="addCrumb">
 				<argument name="crumbName" xsi:type="string">RSS Feeds</argument>
 				<argument name="crumbInfo" xsi:type="array">
-					<item name="title" xsi:type="string">RSS Feeds</item>
-					<item name="label" xsi:type="string">RSS Feeds</item>
+					<item name="title" xsi:type="string" translate="true">RSS Feeds</item>
+					<item name="label" xsi:type="string" translate="true">RSS Feeds</item>
+					<item name="last" xsi:type="boolean">true</item>
 				</argument>
 			</action>
 		</referenceBlock>

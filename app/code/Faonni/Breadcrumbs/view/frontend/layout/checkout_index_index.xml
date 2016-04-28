@@ -28,8 +28,9 @@
 			<action method="addCrumb">
 				<argument name="crumbName" xsi:type="string">Checkout</argument>
 				<argument name="crumbInfo" xsi:type="array">
-					<item name="title" xsi:type="string">Checkout</item>
-					<item name="label" xsi:type="string">Checkout</item>
+					<item name="title" xsi:type="string" translate="true">Checkout</item>
+					<item name="label" xsi:type="string" translate="true">Checkout</item>
+					<item name="last" xsi:type="boolean">true</item>
 				</argument>
 			</action>
 		</referenceBlock>

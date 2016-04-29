@@ -26,7 +26,7 @@
 	<body>
 		<referenceBlock name="breadcrumbs">
 			<action method="addCrumb">
-				<argument name="crumbName" xsi:type="string">Order Information</argument>
+				<argument name="crumbName" xsi:type="string">order_information</argument>
 				<argument name="crumbInfo" xsi:type="array">
 					<item name="title" xsi:type="string" translate="true">Order Information</item>
 					<item name="label" xsi:type="string" translate="true">Order Information</item>

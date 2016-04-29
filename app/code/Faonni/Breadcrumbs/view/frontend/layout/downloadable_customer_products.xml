@@ -26,7 +26,7 @@
 	<body>
 		<referenceBlock name="breadcrumbs">
 			<action method="addCrumb">
-				<argument name="crumbName" xsi:type="string">My Downloadable Products</argument>
+				<argument name="crumbName" xsi:type="string">my_downloadable_products</argument>
 				<argument name="crumbInfo" xsi:type="array">
 					<item name="title" xsi:type="string" translate="true">My Downloadable Products</item>
 					<item name="label" xsi:type="string" translate="true">My Downloadable Products</item>

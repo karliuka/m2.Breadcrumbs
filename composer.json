@@ -2,7 +2,7 @@
     "name": "faonni/module-breadcrumbs",
     "description": "Add breadcrumbs to any page.",
     "type": "magento2-module",
-	"version": "1.0.0",
+	"version": "2.0.1-beta",
 	"license": [
 		"OSL-3.0"
 		],

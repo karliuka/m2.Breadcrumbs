@@ -1,0 +1,13 @@
+{
+    "name": "faonni/module-breadcrumbs",
+    "description": "Add breadcrumbs to any page.",
+    "type": "magento2-module",
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Faonni/Breadcrumbs"
+            ]
+        ]
+    }
+}

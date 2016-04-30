@@ -1,5 +1,6 @@
 # Magento2 Breadcrumbs. 
 Add breadcrumbs to any page.
+![Magento2 Breadcrumbs](http://i.imgur.com/ZznPoeY.png)
 
 ## Install with Composer as you go
 

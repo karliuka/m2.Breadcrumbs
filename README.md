@@ -1,4 +1,4 @@
-# Magento 2. Breadcrumbs. 
+# Magento2 Breadcrumbs. 
 Add breadcrumbs to any page.
 
 ## Install with Composer as you go

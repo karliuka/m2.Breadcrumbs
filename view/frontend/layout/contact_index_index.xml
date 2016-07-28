@@ -21,12 +21,19 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<!--
+	Handle from all pages
+	-->		
 	<update handle="breadcrumbs_home"/>
+	<!--
+	layout for contact page
+	-->		
 	<body>
 		<referenceBlock name="breadcrumbs">
 			<action method="addCrumb">
-				<argument name="crumbName" xsi:type="string">contact_us</argument>
+				<argument name="crumbName" xsi:type="string">contact</argument>
 				<argument name="crumbInfo" xsi:type="array">
 					<item name="title" xsi:type="string" translate="true">Contact Us</item>
 					<item name="label" xsi:type="string" translate="true">Contact Us</item>

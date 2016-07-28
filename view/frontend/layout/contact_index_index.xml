@@ -32,7 +32,7 @@
 	-->		
 	<body>
 		<referenceBlock name="breadcrumbs">
-			<action method="addCrumb">
+			<action method="addCrumb" ifconfig="design/breadcrumbs/active">
 				<argument name="crumbName" xsi:type="string">contact</argument>
 				<argument name="crumbInfo" xsi:type="array">
 					<item name="title" xsi:type="string" translate="true">Contact Us</item>

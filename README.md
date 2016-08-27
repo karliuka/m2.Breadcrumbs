@@ -9,12 +9,13 @@ Add breadcrumbs to any page.
 2. Enter following commands to install module:
 
     ```bash
-    composer require faonni/module-breadcrumbs=dev-master
+    composer require faonni/module-breadcrumbs
     ```
    Wait while dependencies are updated.
 
 3. Enter following commands to enable module:
 
     ```bash
-    php bin/magento setup:upgrade
+	php bin/magento setup:upgrade
+	php bin/magento setup:static-content:deploy
     ```

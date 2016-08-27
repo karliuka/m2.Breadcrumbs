@@ -1,7 +1,7 @@
 # Magento2 Breadcrumbs
 Add breadcrumbs to any page.
 
-<img alt="Magento2 Breadcrumbs" src="http://i.imgur.com/XJbi1cB.png?1" style="width:100%"/>
+<img alt="Magento2 Breadcrumbs" src="https://karliuka.github.io/m2/breadcrumbs/account.png" style="width:100%"/>
 ## Install with Composer as you go
 
 1. Go to Magento2 root folder

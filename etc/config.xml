@@ -30,6 +30,7 @@
         <design>
             <breadcrumbs>
                 <active>1</active>
+                <home>1</home>
             </breadcrumbs>		
         </design>
     </default>

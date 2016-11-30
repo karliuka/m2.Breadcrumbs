@@ -1,4 +1,5 @@
 # Magento2 Breadcrumbs
+[![Code Climate](https://codeclimate.com/github/karliuka/m2.Breadcrumbs/badges/gpa.svg)](https://codeclimate.com/github/karliuka/m2.Breadcrumbs)
 Add breadcrumbs to any page.
 
 <img alt="Magento2 Breadcrumbs" src="https://karliuka.github.io/m2/breadcrumbs/account.png" style="width:100%"/>

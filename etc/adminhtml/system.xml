@@ -10,6 +10,9 @@
 	xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <section id="design">
+            <!--
+            breadcrumbs config
+            -->	             
             <group id="breadcrumbs" translate="label" type="text" sortOrder="39" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Breadcrumbs</label>
                 <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">

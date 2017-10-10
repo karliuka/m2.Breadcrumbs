@@ -2,7 +2,7 @@
     "name": "faonni/module-breadcrumbs",
     "description": "Add breadcrumbs to any page.",
     "type": "magento2-module",
-	"version": "2.0.8",
+	"version": "2.0.9",
     "authors": [{
         "name" : "Karliuka Vitalii",
         "email": "karliuka.vitalii@gmail.com"

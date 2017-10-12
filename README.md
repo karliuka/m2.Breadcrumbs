@@ -21,5 +21,6 @@ Add breadcrumbs to any page.
 	php bin/magento setup:upgrade
 	php bin/magento setup:static-content:deploy
     ```
+ 4. Go to Configuration > Design > Breadcrumbs and set Enabled to Yes
     
 * [Breadcrumbs from Magento](https://github.com/karliuka/m1.Breadcrumbs)

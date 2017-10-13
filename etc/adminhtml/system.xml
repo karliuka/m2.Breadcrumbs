@@ -15,16 +15,9 @@
             -->	             
             <group id="breadcrumbs" translate="label" type="text" sortOrder="39" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Breadcrumbs</label>
-                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>	
-                <field id="home" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Hide on homepage</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <depends>
-                        <field id="active">1</field>
-					</depends>                     
                 </field>	                			
             </group>
         </section>

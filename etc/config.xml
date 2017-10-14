@@ -15,7 +15,6 @@
         <design>
             <breadcrumbs>
                 <active>1</active>
-                <absolute>1</absolute>
             </breadcrumbs>		
         </design>
     </default>

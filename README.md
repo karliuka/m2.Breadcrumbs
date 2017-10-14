@@ -1,6 +1,6 @@
 # Magento2 Breadcrumbs
 
-Add breadcrumbs to any page.
+Extension add breadcrumbs to pages in Magento 2 that by default do not have breadcrumbs. 
 
 <img alt="Magento2 Breadcrumbs" src="https://karliuka.github.io/m2/breadcrumbs/account.png" style="width:100%"/>
 

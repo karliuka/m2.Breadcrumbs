@@ -16,7 +16,7 @@
 			<action method="addCrumb" ifconfig="design/breadcrumbs/active">
 				<argument name="crumbName" xsi:type="string">home</argument>
 				<argument name="crumbInfo" xsi:type="array">
-					<item name="title" xsi:type="string" translate="true">Home</item>
+					<item name="title" xsi:type="string" translate="true">Go to Home Page</item>
 					<item name="label" xsi:type="string" translate="true">Home</item>
 					<item name="link" xsi:type="string">/</item>
 				</argument>

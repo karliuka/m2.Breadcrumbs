@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © 2011-2017 Karliuka Vitalii(karliuka.vitalii@gmail.com)
+ * 
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="other_settings">
+        <!-- breadcrumbs fieldset -->
+		<fieldset name="breadcrumbs" sortOrder="49">
+            <settings>
+                <level>1</level>
+                <collapsible>true</collapsible>
+                <label translate="true">Breadcrumbs</label>
+            </settings>
+            <field name="breadcrumbs_enabled" formElement="select">
+                <settings>
+                    <dataType>text</dataType>
+                    <label translate="true">Enabled</label>
+                    <dataScope>breadcrumbs_enabled</dataScope>
+                </settings>
+                <formElements>
+                    <select>
+                        <settings>
+                            <options class="Magento\Config\Model\Config\Source\Yesno"/>
+                        </settings>
+                    </select>
+                </formElements>
+            </field>
+        </fieldset>
+    </fieldset>
+</form>

@@ -17,7 +17,7 @@
 	-->		
 	<body>
 		<referenceBlock name="breadcrumbs">
-			<action method="addCrumb" ifconfig="design/breadcrumbs/active">
+			<action method="addCrumb" ifconfig="design/breadcrumbs/breadcrumbs_enabled">
 				<argument name="crumbName" xsi:type="string">account.review</argument>
 				<argument name="crumbInfo" xsi:type="array">
 					<item name="title" xsi:type="string" translate="true">My Product Reviews</item>

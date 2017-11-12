@@ -14,7 +14,7 @@
     <default>
         <design>
             <breadcrumbs>
-                <active>1</active>
+                <breadcrumbs_enabled>1</breadcrumbs_enabled>
             </breadcrumbs>		
         </design>
     </default>

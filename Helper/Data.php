@@ -20,7 +20,7 @@ class Data extends AbstractHelper
     /**
      * Enabled Config Path
      */
-    const XML_CONFIG_ENABLED = 'design/breadcrumbs/active';
+    const XML_CONFIG_ENABLED = 'design/breadcrumbs/breadcrumbs_enabled';
     
     /**
      * Store Manager

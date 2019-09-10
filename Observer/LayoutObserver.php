@@ -1,7 +1,6 @@
 <?php
 /**
- * Copyright © 2011-2018 Karliuka Vitalii(karliuka.vitalii@gmail.com)
- * 
+ * Copyright © Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * See COPYING.txt for license details.
  */
 namespace Faonni\Breadcrumbs\Observer;
@@ -18,21 +17,21 @@ class LayoutObserver implements ObserverInterface
     /**
      * Breadcrumbs Helper
      *
-     * @var \Faonni\Breadcrumbs\Helper\Data
+     * @var BreadcrumbsHelper
      */
-    protected $_helper; 
-	
+    protected $helper;
+
     /**
      * Initialize Observer
      *
      * @param BreadcrumbsHelper $helper
-     */ 
+     */
     public function __construct(
         BreadcrumbsHelper $helper
     ) {
-        $this->_helper = $helper;
+        $this->helper = $helper;
     }
-	
+
     /**
      * Layout Load
      *
@@ -41,10 +40,10 @@ class LayoutObserver implements ObserverInterface
      */
     public function execute(Observer $observer)
     {
-        if (!$this->_helper->isEnabled()) {
+        if (!$this->helper->isEnabled()) {
              /* handle disable breadcrumbs  */
-            $layout = $observer->getEvent()->getLayout(); 
-            $layout->getUpdate()->addHandle('breadcrumbs_disable'); 
+            $layout = $observer->getEvent()->getLayout();
+            $layout->getUpdate()->addHandle('breadcrumbs_disable');
         }
     }
-}  
+}

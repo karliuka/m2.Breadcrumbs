@@ -1,7 +1,6 @@
 <?php
 /**
- * Copyright © 2011-2018 Karliuka Vitalii(karliuka.vitalii@gmail.com)
- * 
+ * Copyright © Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * See COPYING.txt for license details.
  */
 namespace Faonni\Breadcrumbs\Setup;
@@ -19,9 +18,9 @@ class Uninstall implements UninstallInterface
     /**
      * Config Collection Factory
      *
-     * @var \Magento\Config\Model\ResourceModel\Config\Data\CollectionFactory
+     * @var ConfigCollectionFactory
      */
-    private $_configCollectionFactory;
+    protected $configCollectionFactory;
 
     /**
      * Initialize Setup
@@ -29,11 +28,11 @@ class Uninstall implements UninstallInterface
      * @param ConfigCollectionFactory $configCollectionFactory
      */
     public function __construct(
-		ConfigCollectionFactory $configCollectionFactory
-	) {
-        $this->_configCollectionFactory = $configCollectionFactory;
+        ConfigCollectionFactory $configCollectionFactory
+    ) {
+        $this->configCollectionFactory = $configCollectionFactory;
     }
-    
+
     /**
      * Uninstall DB Schema for a Module Breadcrumbs
      *
@@ -44,7 +43,7 @@ class Uninstall implements UninstallInterface
     public function uninstall(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
         $setup->startSetup();
-        $this->removeConfig();	
+        $this->removeConfig();
         $setup->endSetup();
     }
 
@@ -53,15 +52,12 @@ class Uninstall implements UninstallInterface
      *
      * @return void
      */
-    private function removeConfig()
+    protected function removeConfig()
     {
         $path = 'design/breadcrumbs';
         /** @var \Magento\Config\Model\ResourceModel\Config\Data\Collection $collection */
-        $collection = $this->_configCollectionFactory->create(); 
+        $collection = $this->configCollectionFactory->create();
         $collection->addPathFilter($path);
-
-        foreach ($collection as $config) {
-			$config->delete(); 	
-        }
-    }    
+        $collection->walk('delete');
+    }
 }

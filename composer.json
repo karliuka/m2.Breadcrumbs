@@ -2,23 +2,23 @@
     "name": "faonni/module-breadcrumbs",
     "description": "Extension add breadcrumbs to pages in Magento 2 that by default do not have breadcrumbs.",
     "type": "magento2-module",
-	"version": "2.2.3",
+    "version": "2.2.3",
     "authors": [{
-        "name" : "Karliuka Vitalii",
+        "name": "Karliuka Vitalii",
         "email": "karliuka.vitalii@gmail.com"
-    }],		
-	"license": [
-		"OSL-3.0"
-	],
-	"require": {
-		"magento/module-theme": "100.2.*"	
-		},
-	"autoload": {
-		"files": [ 
-			"registration.php" 
-		],
-		"psr-4": {
-			"Faonni\\Breadcrumbs\\": ""
-		}
-	}
+    }],
+    "license": [
+        "OSL-3.0"
+    ],
+    "require": {
+        "magento/module-theme": "100.2.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php" 
+        ],
+        "psr-4": {
+            "Faonni\\Breadcrumbs\\": ""
+        }
+    }
 }

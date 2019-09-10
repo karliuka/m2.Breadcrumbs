@@ -1,17 +1,14 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2011-2018 Karliuka Vitalii(karliuka.vitalii@gmail.com)
- * 
+ * Copyright © Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * See COPYING.txt for license details.
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
-	<!--
-	plugin
-	-->		
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- plugin -->
     <type name="\Magento\Theme\Block\Html\Breadcrumbs">
-        <plugin name="faonni_breadcrumbs" type="Faonni\Breadcrumbs\Plugin\Theme\Block\Html\Breadcrumbs" />
+        <plugin name="faonni_breadcrumbs" type="Faonni\Breadcrumbs\Plugin\Theme\Block\Html\Breadcrumbs"/>
     </type>
 </config>

@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © 2011-2018 Karliuka Vitalii(karliuka.vitalii@gmail.com)
- *
+ * Copyright © Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * See COPYING.txt for license details.
  */
 namespace Faonni\Breadcrumbs\Plugin\Theme\Block\Html;
 
+use Magento\Theme\Block\Html\Breadcrumbs as Subject;
 use Faonni\Breadcrumbs\Helper\Data as BreadcrumbsHelper;
 
 /**
@@ -16,52 +16,51 @@ class Breadcrumbs
     /**
      * Breadcrumbs Helper
      *
-     * @var \Faonni\Breadcrumbs\Helper\Data
+     * @var BreadcrumbsHelper
      */
-    protected $_helper; 
-	
+    protected $helper;
+
     /**
      * Initialize Plugin
      *
      * @param BreadcrumbsHelper $helper
-     */ 
+     */
     public function __construct(
         BreadcrumbsHelper $helper
     ) {
-        $this->_helper = $helper;
+        $this->helper = $helper;
     }
-    
+
     /**
      * Add crumb
      *
-     * @param \Magento\Theme\Block\Html\Breadcrumbs $subject
+     * @param Subject $subject
      * @param string $crumbName
      * @param array $crumbInfo
      * @return array|null
-     */     
-    public function beforeAddCrumb($subject, $crumbName, $crumbInfo)
+     */
+    public function beforeAddCrumb(Subject $subject, $crumbName, $crumbInfo)
     {
-        if ($this->_helper->isEnabled()) {
+        if ($this->helper->isEnabled()) {
             /* set absolute link */
             if (!empty($crumbInfo['link'])) {
-                $crumbInfo['link'] = $this->_updateCrumbLink($subject, $crumbInfo['link']);
+                $crumbInfo['link'] = $this->updateCrumbLink($subject, $crumbInfo['link']);
             }
-        }  
+        }
         return [$crumbName, $crumbInfo];
     }
-    
+
     /**
      * Update Crumb Link
      *
-     * @param \Magento\Theme\Block\Html\Breadcrumbs $subject     
+     * @param Subject $subject
      * @param string $link
      * @return string
-     */     
-    private function _updateCrumbLink($subject, $link)
+     */
+    protected function updateCrumbLink(Subject $subject, $link)
     {
         return strpos($link, '://') === false
             ? $subject->getUrl(trim($link, '/'), ['_secure' => true])
             : $link;
-    }    
+    }
 }
- 

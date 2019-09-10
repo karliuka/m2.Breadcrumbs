@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2011-2018 Karliuka Vitalii(karliuka.vitalii@gmail.com)
- * 
+ * Copyright © Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-	<!--
-	layout for disabled breadcrumbs
-	-->	
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!--
+    layout for disabled breadcrumbs
+    -->
     <body>
-		<referenceBlock name="breadcrumbs" remove="true"/>
+        <referenceBlock name="breadcrumbs" remove="true"/>
     </body>
 </page>

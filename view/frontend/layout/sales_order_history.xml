@@ -1,30 +1,29 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2011-2018 Karliuka Vitalii(karliuka.vitalii@gmail.com)
- * 
+ * Copyright © Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-	<!--
-	Handle from all customer account pages
-	-->	 	
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!--
+    Handle from all customer account pages
+    -->
     <update handle="breadcrumbs_account"/>
-	<!--
-	layout for account orders page
-	-->		
-	<body>
-		<referenceBlock name="breadcrumbs">
-			<action method="addCrumb" ifconfig="design/breadcrumbs/breadcrumbs_enabled">
-				<argument name="crumbName" xsi:type="string">account.order</argument>
-				<argument name="crumbInfo" xsi:type="array">
-					<item name="title" xsi:type="string" translate="true">My Orders</item>
-					<item name="label" xsi:type="string" translate="true">My Orders</item>
-					<item name="last" xsi:type="boolean">true</item>
-				</argument>
-			</action>
-		</referenceBlock>
+    <!--
+    layout for account orders page
+    -->
+    <body>
+        <referenceBlock name="breadcrumbs">
+            <action method="addCrumb" ifconfig="design/breadcrumbs/breadcrumbs_enabled">
+                <argument name="crumbName" xsi:type="string">account.order</argument>
+                <argument name="crumbInfo" xsi:type="array">
+                    <item name="title" xsi:type="string" translate="true">My Orders</item>
+                    <item name="label" xsi:type="string" translate="true">My Orders</item>
+                    <item name="last" xsi:type="boolean">true</item>
+                </argument>
+            </action>
+        </referenceBlock>
     </body>
 </page>

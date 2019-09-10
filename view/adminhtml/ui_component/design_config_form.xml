@@ -9,25 +9,24 @@
     xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <fieldset name="other_settings">
         <!-- breadcrumbs fieldset -->
-        <fieldset name="breadcrumbs" sortOrder="49">
-            <settings>
-                <level>1</level>
-                <collapsible>true</collapsible>
-                <label translate="true">Breadcrumbs</label>
-            </settings>
-            <field name="breadcrumbs_enabled" formElement="select">
-                <settings>
-                    <dataType>text</dataType>
-                    <label translate="true">Enabled</label>
-                    <dataScope>breadcrumbs_enabled</dataScope>
-                </settings>
-                <formElements>
-                    <select>
-                        <settings>
-                            <options class="Magento\Config\Model\Config\Source\Yesno"/>
-                        </settings>
-                    </select>
-                </formElements>
+        <fieldset name="breadcrumbs">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string" translate="true">Breadcrumbs</item>
+                    <item name="collapsible" xsi:type="boolean">true</item>
+                    <item name="level" xsi:type="number">1</item>
+                </item>
+            </argument>
+            <field name="breadcrumbs_enabled">
+                <argument name="data" xsi:type="array">
+                    <item name="options" xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config" xsi:type="array">
+                        <item name="label" xsi:type="string" translate="true">Enabled</item>
+                        <item name="dataType" xsi:type="string">text</item>
+                        <item name="formElement" xsi:type="string">select</item>
+                        <item name="dataScope" xsi:type="string">breadcrumbs_enabled</item>
+                    </item>
+                </argument>
             </field>
         </fieldset>
     </fieldset>

@@ -9,7 +9,7 @@ Extension add breadcrumbs to pages in Magento 2 that by default do not have brea
 
 ## Compatibility
 
-Magento CE(EE) 2.0.x, 2.1.x, 2.2.x, 2.3.x
+Magento CE(EE) 2.0.x, 2.1.x, 2.2.x, 2.3.x, 2.4.x
 
 ## Install
 
@@ -43,6 +43,12 @@ Magento CE(EE) 2.0.x, 2.1.x, 2.2.x, 2.3.x
     composer require faonni/module-breadcrumbs:2.3.*
     ```
 
+    For Magento CE(EE) 2.4.x
+
+    ```bash
+    composer require faonni/module-breadcrumbs:2.4.*
+    ```
+
    Wait while dependencies are updated.
 
 #### Manual Installation
@@ -72,7 +78,7 @@ In the Magento Admin Panel go to *Stores > Configuration > Design > Breadcrumbs*
 
 <img alt="Magento2 Breadcrumbs" src="https://karliuka.github.io/m2/breadcrumbs/config-2.png" style="width:100%"/>
 
-For Magento CE(EE) 2.1.x, 2.2.x, 2.3.x
+For Magento CE(EE) 2.1.x, 2.2.x, 2.3.x, 2.4.x
 
 In the Magento Admin Panel go to *Content > Configuration > {Your Theme} > Breadcrumbs*.
 

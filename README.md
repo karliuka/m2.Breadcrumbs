@@ -78,7 +78,7 @@ In the Magento Admin Panel go to *Stores > Configuration > Design > Breadcrumbs*
 
 <img alt="Magento2 Breadcrumbs" src="https://karliuka.github.io/m2/breadcrumbs/config-2.png" style="width:100%"/>
 
-For Magento CE(EE) 2.1.x, 2.2.x, 2.3.x, 2.4.*
+For Magento CE(EE) 2.1.x, 2.2.x, 2.3.x, 2.4.x
 
 In the Magento Admin Panel go to *Content > Configuration > {Your Theme} > Breadcrumbs*.
 

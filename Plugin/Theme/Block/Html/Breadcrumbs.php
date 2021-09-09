@@ -14,8 +14,6 @@ use Faonni\Breadcrumbs\Helper\Data as BreadcrumbsHelper;
 class Breadcrumbs
 {
     /**
-     * Breadcrumbs Helper
-     *
      * @var BreadcrumbsHelper
      */
     protected $helper;
@@ -36,8 +34,8 @@ class Breadcrumbs
      *
      * @param Subject $subject
      * @param string $crumbName
-     * @param array $crumbInfo
-     * @return array|null
+     * @param mixed[] $crumbInfo
+     * @return mixed[]|null
      */
     public function beforeAddCrumb(Subject $subject, $crumbName, $crumbInfo)
     {

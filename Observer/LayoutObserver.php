@@ -10,13 +10,11 @@ use Magento\Framework\Event\ObserverInterface;
 use Faonni\Breadcrumbs\Helper\Data as BreadcrumbsHelper;
 
 /**
- * Layout Observer
+ * Disable breadcrumbs
  */
 class LayoutObserver implements ObserverInterface
 {
     /**
-     * Breadcrumbs Helper
-     *
      * @var BreadcrumbsHelper
      */
     protected $helper;
@@ -42,7 +40,7 @@ class LayoutObserver implements ObserverInterface
     {
         if (!$this->helper->isEnabled()) {
              /* handle disable breadcrumbs  */
-            $layout = $observer->getEvent()->getLayout();
+            $layout = $observer->getEvent()->getData('layout');
             $layout->getUpdate()->addHandle('breadcrumbs_disable');
         }
     }

@@ -16,8 +16,6 @@ use Magento\Config\Model\ResourceModel\Config\Data\CollectionFactory as ConfigCo
 class Uninstall implements UninstallInterface
 {
     /**
-     * Config Collection Factory
-     *
      * @var ConfigCollectionFactory
      */
     protected $configCollectionFactory;
@@ -55,7 +53,6 @@ class Uninstall implements UninstallInterface
     protected function removeConfig()
     {
         $path = 'design/breadcrumbs';
-        /** @var \Magento\Config\Model\ResourceModel\Config\Data\Collection $collection */
         $collection = $this->configCollectionFactory->create();
         $collection->addPathFilter($path);
         $collection->walk('delete');

@@ -55,7 +55,6 @@ class Uninstall implements UninstallInterface
     protected function removeConfig()
     {
         $path = 'design/breadcrumbs';
-        /** @var \Magento\Config\Model\ResourceModel\Config\Data\Collection $collection */
         $collection = $this->configCollectionFactory->create();
         $collection->addPathFilter($path);
         $collection->walk('delete');
